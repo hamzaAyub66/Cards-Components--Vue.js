@@ -5,11 +5,8 @@
 
 
 * Vuetify
-* Responsive layout
-* Vue Apex Charts
-* Simple login / logout 
 * Error page
-* Styled Vuetify components like buttons, modals, etc
+* Styled Vuetify components like Cards
 
 ## Pages
 We have implemented some basic pages, so you can see our template in action.
@@ -21,7 +18,7 @@ We have implemented some basic pages, so you can see our template in action.
 ```
 2. Get in the project folder
 ```shell
-cd material-vue
+cd Cards Components - Vue.js
 ```
 3. Install dependencies via npm or yarn
 ```shell
