@@ -27,7 +27,7 @@
                   </v-list-item-content>
                 </v-list-item>
 
-                <v-divider></v-divider>
+               
                  <div class="mx-4"> 
                   <v-form
                     ref="form"
@@ -41,6 +41,7 @@
                           :counter="10"
                           :rules="nameRules"
                           label="First Name"
+                          outlined
                           required
                         ></v-text-field>
                          <v-text-field
@@ -48,14 +49,16 @@
                           :counter="10"
                           :rules="nameRules"
                           label="Last Name"
+                          outlined
                           required
                         ></v-text-field>
 
                         <v-select
                           v-model="select"
                           :items="items"
-                          :rules="[v => !!v || 'Item is required']"
-                          label="Item"
+                          :rules="[v => !!v || 'Membership Tier is required']"
+                          label="Membership Tier"
+                          outlined
                           required
                         ></v-select>
 
@@ -64,16 +67,17 @@
                           :counter="500"
                           :rules="descriptionRules"
                           label="Description"
+                          outlined
                           required
                         ></v-textarea>
 
                         <v-btn
                           :disabled="!valid"
                           color="success"
-                          class="mr-4"
+                          class="mr-4 my-2"
                           @click="validate"
                         >
-                          Validate
+                          Submit
                         </v-btn>
                   
                   </v-form>
