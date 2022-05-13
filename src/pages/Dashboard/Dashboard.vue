@@ -90,9 +90,10 @@
 
       <v-row>
         <v-col lg="4" sm="5" md="5" cols="12" v-for="item in cardItems" :key="item.id">
-          <router-link :to="'dashboard/' + item.id" >
+          <!-- <router-link  > -->
           <v-card
             class="mx-auto my-12"
+            :to="'dashboard/' + item.id"
           >
             <v-img
               height="250"
@@ -107,7 +108,7 @@
               <div>{{ item.description }}</div>
             </v-card-text>
           </v-card>
-          </router-link>
+          <!-- </router-link> -->
         </v-col>
       </v-row>
 
